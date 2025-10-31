@@ -1,0 +1,192 @@
+mijn-website/
+│
+├─ index.html
+├─ over.html
+├─ contact.html
+├─ style.css
+└─ images/
+    ├─ voorbeeld1.jpg
+    └─ voorbeeld2.jpg
+/* Algemeen */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header / Navigatie */
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffdd57;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Knoppen */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #155ab6;
+}
+
+/* Afbeeldingen */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsief */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mijn Professionele Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mijn Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="over.html">Over mij</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Welkom!</h2>
+        <p>Dit is een professionele demo-website die klaar is om uitgebreid te worden met je eigen content en projecten.</p>
+        <a href="over.html" class="button">Lees meer over mij</a>
+
+        <h2>Projecten</h2>
+        <div>
+            <img src="images/voorbeeld1.jpg" alt="Project 1">
+            <p>Projectbeschrijving 1</p>
+        </div>
+        <div>
+            <img src="images/voorbeeld2.jpg" alt="Project 2">
+            <p>Projectbeschrijving 2</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Mijn Naam. Alle rechten voorbehouden.
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Over mij</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mijn Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="over.html">Over mij</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Over mij</h2>
+        <p>Hier kun je jezelf voorstellen. Vertel wie je bent, wat je doet, en wat je passies zijn.</p>
+        <p>Je kunt hier ook je vaardigheden, opleidingen en projecten opsommen.</p>
+        <a href="contact.html" class="button">Neem contact op</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Mijn Naam. Alle rechten voorbehouden.
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mijn Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="over.html">Over mij</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Je kunt mij bereiken via:</p>
+        <ul>
+            <li>Email: <a href="mailto:voorbeeld@email.com">voorbeeld@email.com</a></li>
+            <li>Telefoon: 012-3456789</li>
+            <li>Socials: <a href="#">LinkedIn</a>, <a href="#">Twitter</a></li>
+        </ul>
+        <a href="index.html" class="button">Terug naar Home</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Mijn Naam. Alle rechten voorbehouden.
+    </footer>
+</body>
+</html>
